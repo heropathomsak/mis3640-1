@@ -4,5 +4,3 @@
 This is a new line.
 
 This is Zhi Li's repo.
-
-This is for Ye ri Lee.
