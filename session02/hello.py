@@ -9,4 +9,3 @@ print(46 + 37 + 38)
 
 # NameError
 # SyntaxError
-
