@@ -16,8 +16,8 @@
 
 # print('message')
 
-first_name = 'John'
-last_name = 'Lennon'
+first_name = "John"
+last_name = "Lennon"
 full_name = first_name + " " + last_name
 
 # print('Hello,', full_name)
@@ -36,4 +36,3 @@ full_name = first_name + " " + last_name
 
 
 # TODO: try all the examples in notebook
-
