@@ -24,8 +24,7 @@ breakfast_min = (breakfast_hr - int(breakfast_hr)) * 60
 breakfast_sec = (breakfast_min - int(breakfast_min)) * 60
 
 print(
-    f"Breakfast time is {int(breakfast_hr):02d}:{int(breakfast_min):02d}:\
-        {int(breakfast_sec):02d}."
+    f"Breakfast time is {int(breakfast_hr):02d}:{int(breakfast_min):02d}:{int(breakfast_sec):02d}."
 )
 print()
 
