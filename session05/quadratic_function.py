@@ -2,8 +2,15 @@ import math
 
 
 def quadratic(a, b, c):
-    """Simple version of quadratic function solver"""
+    """Simple version of quadratic function solver
+    a: float
+    b: float
+    c: float
+
+    returns two numbers"""
+
     discriminant = b ** 2 - 4 * a * c  # calculate the discriminant
+
     x_1 = (-b + math.sqrt(discriminant)) / 2 * a
     x_2 = (-b - math.sqrt(discriminant)) / 2 * a
     return x_1, x_2
@@ -14,6 +21,9 @@ print(quadratic(1, 2, 1))
 
 def quadratic(a, b, c):
     """solves quadratic function and return two roots.
+    a: float
+    b: float
+    c: float
     returns None if there is no real number solution,"""
     if a == 0 and b == 0:
         print('Hey, this is not a function!')
@@ -40,6 +50,7 @@ print(quadratic(1, 4, 1))
 a = float(input('please enter a number:'))
 b = float(input('please enter a number:'))
 c = float(input('please enter a number:'))
+
 result = quadratic(a, b, c)
 if result:
     if isinstance(result, float):
