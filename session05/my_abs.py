@@ -10,3 +10,4 @@ def my_abs(number):
             return -number
     else:
         print('I don\'t know how to solve this')
+
