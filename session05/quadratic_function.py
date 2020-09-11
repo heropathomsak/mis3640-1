@@ -52,6 +52,7 @@ b = float(input('please enter a number:'))
 c = float(input('please enter a number:'))
 
 result = quadratic(a, b, c)
+
 if result:
     if isinstance(result, float):
         print(f'The solution is {result}.')
