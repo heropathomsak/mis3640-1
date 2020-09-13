@@ -53,7 +53,7 @@ c = float(input('please enter a number:'))
 
 result = quadratic(a, b, c)
 
-# if result: if result is not None or not equal to 0
+# if result: if result is not None, or not equal to 0/empty/False
 if result is not None:
     if isinstance(result, float):
         print(f'The solution is {result}.')
