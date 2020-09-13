@@ -5,7 +5,6 @@ def area_of_circle(whatever):
     """returns the area of circle with parameter, which is a float"""
     # print(math.pi * whatever ** 2)
     return math.pi * whatever ** 2
-    
 
 
 r1 = 10
@@ -24,5 +23,6 @@ def give_me_a_break():
     str1 = 'break'
     return str1
     print('another break')
-    
+
+
 print(give_me_a_break())
