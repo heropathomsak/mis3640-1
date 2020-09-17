@@ -11,3 +11,12 @@ def my_abs(number):
     else:
         print('I don\'t know how to solve this')
 
+
+# print(my_abs(-1))
+
+def main():
+    print(my_abs(-1))
+
+
+if __name__ == "__main__":
+    main()
