@@ -43,21 +43,25 @@ def quadratic(a, b, c):
         return None
 
 
-print(quadratic(2, 2, 2))
-print(quadratic(1, 4, 1))
+def main():
+    print(quadratic(2, 2, 2))
+    print(quadratic(1, 4, 1))
 
+    a = float(input('please enter a number:'))
+    b = float(input('please enter a number:'))
+    c = float(input('please enter a number:'))
 
-a = float(input('please enter a number:'))
-b = float(input('please enter a number:'))
-c = float(input('please enter a number:'))
+    result = quadratic(a, b, c)
 
-result = quadratic(a, b, c)
-
-# if result: if result is not None, or not equal to 0/empty/False
-if result is not None:
-    if isinstance(result, float):
-        print(f'The solution is {result}.')
+    # if result: = if result is not None, or not equal to 0/empty/False:
+    if result is not None:
+        if isinstance(result, float):
+            print(f'The solution is {result}.')
+        else:
+            print(f'Two roots are {result[0]} and {result[1]}.')
     else:
-        print(f'Two roots are {result[0]} and {result[1]}.')
-else:
-    print('Sorry 😎')
+        print('Sorry 😎')
+
+
+if __name__ == "__main__":
+    main()
