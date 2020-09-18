@@ -12,10 +12,13 @@ def my_abs(number):
         print('I don\'t know how to solve this')
 
 
-# print(my_abs(-1))
+def f(name):
+    print(f'Hi, {name}!')
+
 
 def main():
     print(my_abs(-1))
+    f('Noah')
 
 
 if __name__ == "__main__":
