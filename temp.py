@@ -41,4 +41,3 @@ def my_abs(x):
 def my_abs2(x):
     """returns the abosolute value of x
     x: an integer or a float"""
-    
