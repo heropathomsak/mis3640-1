@@ -1,43 +1,16 @@
-def f(a, b, c):
-    return a + b + c, a * b * c
+def calc(x):
+    result = 0
+    for i in range(x):
+        # print(i, result)
+        result += i
+    return result
 
 
-# result_one, result_two = f(2, 3, 4)
-# print(result_one)
-# print(result_two)
+def main():
+    y = 10
+    myresult = calc(5)  # my intention is to sum up from 1 to 5
+    print(myresult)
 
 
-def f2():
-    """this function will change the world"""
-    print('Hi')
-    return None
-
-
-# result = f2()
-# print(result)
-
-
-# today = 'Thursday'
-# if today == 'Thursday':
-#     pass
-
-
-def my_abs(x):
-    """"""
-    # First, check the type of x
-    # if x is an integer, or a float, move to the next step
-    #    if x is negative,  return the opposite value of x
-    #    else, just return x
-    # if not, do something
-    if isinstance(x, int) or isinstance(x, float):
-        if x < 0:
-            return -x
-        else:
-            return x
-    else:
-        print('x is not a number!')
-
-
-def my_abs2(x):
-    """returns the abosolute value of x
-    x: an integer or a float"""
+if __name__ == "__main__":
+    main()
