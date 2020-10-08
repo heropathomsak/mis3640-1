@@ -78,7 +78,7 @@ def is_sorted(t):
 def is_anagram(word1, word2):
     """Checks whether two words are anagrams
 
-    Two words are anagrams if you can rearrange the letters from one to 
+    Two words are anagrams if you can rearrange the letters from one to
     spell the other.
 
     word1: string or list
@@ -109,6 +109,8 @@ def has_duplicates(s):
     False
     >>> print(has_duplicates('abba'))
     True
+
+    TODO: use different ways to solve
     """
     return
 
@@ -128,7 +130,6 @@ def has_adjacent_duplicates(s):
     >>> print(has_adjacent_duplicates('abbc'))
     True
     """
-    return
 
 
 def main():
