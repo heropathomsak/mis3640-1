@@ -1,7 +1,8 @@
 import urllib.request
 import json
+from config import OPENWEATHERMAP_APIKEY
 
-APIKEY = 'YOUR_OWN_APIKEY'
+APIKEY = OPENWEATHERMAP_APIKEY
 city = 'Wellesley'
 country_code = 'us'
 url = f'http://api.openweathermap.org/data/2.5/weather?q={city},{country_code}&APPID={APIKEY}'
