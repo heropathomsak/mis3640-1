@@ -125,13 +125,13 @@ def uses_only(word, available):
 def find_words_only_use_planet():
     """"""
     f = open('data/words.txt')
-    num_words_only_use_plane = 0
+    num_words_only_use_planet = 0
     for line in f:
         word = line.strip()
         if uses_only(word, 'planet'):
-            num_words_only_use_plane += 1
+            num_words_only_use_planet += 1
             print(word)
-    return num_words_only_use_plane
+    return num_words_only_use_planet
 
 
 # print('Number of words that use only letters from "planets" is', find_words_only_use_planet())
