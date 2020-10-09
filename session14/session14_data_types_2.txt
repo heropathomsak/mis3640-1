@@ -1,0 +1,194 @@
+   1: >>> j = {'number': 3, 'people': [{'craft': 'ISS', 'name': 'Chris Cassidy'}, {'craft': 'ISS', 'name': 'Anatoly Ivanishin'}, {'craft': 'ISS', 'name': 'Ivan Vagner'}], 'message': 'success'}
+   2: >>> type(j)
+dict
+   3: >>> j['number']
+3
+   4: >>> j.value
+   5: >>> j.values()
+dict_values([3, [{'craft': 'ISS', 'name': 'Chris Cassidy'}, {'craft': 'ISS', 'name': 'Anatoly Ivanishin'}, {'craft': 'ISS', 'name': 'Ivan Vagner'}], 'success'])
+   6: >>> person = {'craft': 'ISS', 'name': 'Chris Cassidy'}
+   7: >>> person['name']
+'Chris Cassidy'
+   8: >>> # string and list
+   9: >>> name = 'allyson'
+  10: >>> a = list(name)
+  11: >>> a
+['a', 'l', 'l', 'y', 's', 'o', 'n']
+  12: >>> name.split()
+['allyson']
+  13: >>> name.split('')
+  14: >>> 'allyson kummins'.split()
+['allyson', 'kummins']
+  15: >>> a
+['a', 'l', 'l', 'y', 's', 'o', 'n']
+  16: >>> name
+'allyson'
+  17: >>> str(a)
+"['a', 'l', 'l', 'y', 's', 'o', 'n']"
+  18: >>> ''.join(a)
+'allyson'
+  19: >>> '-'.join(a)
+'a-l-l-y-s-o-n'
+  20: >>> # string and dict
+  21: >>> name
+'allyson'
+  22: >>> d = {}
+  23: >>> type(d)
+dict
+  24:
+>>> for letter in name:
+...     if letter not in d:
+...         d[letter] = 1
+...     else:
+...         d[letter]+=1
+...
+  25: >>> d
+{'a': 1, 'l': 2, 'y': 1, 's': 1, 'o': 1, 'n': 1}
+  26: >>> d
+{'a': 1, 'l': 2, 'y': 1, 's': 1, 'o': 1, 'n': 1}
+  27: >>> d.get('a', 0)
+1
+  28: >>> d.get('z', 0)
+0
+  29: >>> d['z']
+  30: >>> d.get('z', 1000)
+1000
+  31: >>> d = {}
+  32:
+>>> for letter in name:
+...     d[letter] = d.get(letter, 0) + 1
+...
+  33: >>> d
+{'a': 1, 'l': 2, 'y': 1, 's': 1, 'o': 1, 'n': 1}
+  34: >>> name
+'allyson'
+  35: >>> # string and tuple
+  36: >>> name
+'allyson'
+  37: >>> tuple(name)
+('a', 'l', 'l', 'y', 's', 'o', 'n')
+  38: >>> t = tuple(name)
+  39: >>> t
+('a', 'l', 'l', 'y', 's', 'o', 'n')
+  40: >>> ''.join(t)
+'allyson'
+  41: >>> # string and set
+  42: >>> name
+'allyson'
+  43: >>> set(name)
+{'a', 'l', 'n', 'o', 's', 'y'}
+  44: >>> len(name)
+7
+  45: >>> s = set(name)
+  46: >>> s
+{'a', 'l', 'n', 'o', 's', 'y'}
+  47: >>> len(s)
+6
+  48: >>> name_2 = 'kevin'
+  49: >>> len(name_2)
+5
+  50: >>> len(set(name_2))
+5
+  51: >>> len(set(name)) ==len(name)
+False
+  52: >>> # list and dict
+  53: >>> # similar to string
+  54: >>> d
+{'a': 1, 'l': 2, 'y': 1, 's': 1, 'o': 1, 'n': 1}
+  55: >>> d.key()
+  56: >>> d.keys()
+dict_keys(['a', 'l', 'y', 's', 'o', 'n'])
+  57: >>> list(d.keys())
+['a', 'l', 'y', 's', 'o', 'n']
+  58: >>> list(d.values())
+[1, 2, 1, 1, 1, 1]
+  59: >>> set(d.values())
+{1, 2}
+  60: >>> d
+{'a': 1, 'l': 2, 'y': 1, 's': 1, 'o': 1, 'n': 1}
+  61: >>> # list and tuple
+  62: >>> a
+['a', 'l', 'l', 'y', 's', 'o', 'n']
+  63: >>> t
+('a', 'l', 'l', 'y', 's', 'o', 'n')
+  64: >>> list(t)
+['a', 'l', 'l', 'y', 's', 'o', 'n']
+  65: >>> tuple(a)
+('a', 'l', 'l', 'y', 's', 'o', 'n')
+  66: >>> # string, list and dict
+  67: >>> name
+'allyson'
+  68: >>> b = [134,543534,6546,754,74,5435,76,58]
+  69:
+>>> for pair in zip(name, b):
+...     print(pair)
+...
+  70: >>> list(zip(name,b))
+[('a', 134),
+ ('l', 543534),
+ ('l', 6546),
+ ('y', 754),
+ ('s', 74),
+ ('o', 5435),
+ ('n', 76)]
+  71: >>> c = list(zip(name,b))
+  72: >>> c
+[('a', 134),
+ ('l', 543534),
+ ('l', 6546),
+ ('y', 754),
+ ('s', 74),
+ ('o', 5435),
+ ('n', 76)]
+  73: >>> sorted(c)
+[('a', 134),
+ ('l', 6546),
+ ('l', 543534),
+ ('n', 76),
+ ('o', 5435),
+ ('s', 74),
+ ('y', 754)]
+  74: >>> sorted(c[:-1])
+[('a', 134), ('l', 6546), ('l', 543534), ('o', 5435), ('s', 74), ('y', 754)]
+  75: >>> sorted(c, key=lambda a:a[1])
+[('s', 74),
+ ('n', 76),
+ ('a', 134),
+ ('y', 754),
+ ('o', 5435),
+ ('l', 6546),
+ ('l', 543534)]
+  76: >>> name
+'allyson'
+  77: >>> t
+('a', 'l', 'l', 'y', 's', 'o', 'n')
+  78: >>> t_2 = name, 3424, {'a':2}
+  79: >>> t_2
+('allyson', 3424, {'a': 2})
+  80: >>> d
+{'a': 1, 'l': 2, 'y': 1, 's': 1, 'o': 1, 'n': 1}
+  81: >>> list(d)
+['a', 'l', 'y', 's', 'o', 'n']
+  82: >>> list(d.items())
+[('a', 1), ('l', 2), ('y', 1), ('s', 1), ('o', 1), ('n', 1)]
+  83: >>> sorted(list(d.items()), key=lambda a:a[1])
+[('a', 1), ('y', 1), ('s', 1), ('o', 1), ('n', 1), ('l', 2)]
+  84: >>> name
+'allyson'
+  85:
+>>> for letter in name:
+...     print(letter.upper())
+...
+  86:
+>>> for i in range(5):
+...     print(name[i].upper())
+...
+  87:
+>>> for i in range(7):
+...     print(name[i].upper())
+...
+  88: >>> a = 1000
+  89:
+>>> for i in a:
+...     print(i)
+...
